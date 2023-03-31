@@ -1,4 +1,8 @@
-header{
+a{
+    text-decoration: none;
+}
+
+header{                          /*header*/
     background-color: #F8F9FA;
     height: 4.5rem;
     width: 100%;
@@ -10,7 +14,7 @@ header{
     align-items: center;
 }
 
-header .center{
+header .center{              
     flex: 0 0 60%;
     height: 50%;
 }
@@ -35,11 +39,17 @@ header .sides{
 
 .search_bar{
     background-color: #E5E5E5 !important;
+    font-size: 1rem !important;
     display: inline-block;
     height: 100% !important;
     width: 100%!important;
     margin-left: 0rem  !important;
     padding-bottom: 0.3rem !important;
+}
+
+.logopiccolo{
+    width: 50px;
+    object-fit: cover;
 }
 
 .magnification {
@@ -48,12 +58,135 @@ header .sides{
     height: 100%;
 }
 
+.fa-bars{
+    margin-left: -0.2rem;
+}
+
+
+header .dropdown-toggle::after{
+    border-top: 0;
+    font-family: 'FontAwesome';
+    content: "\f0f3";
+    color: #FF8F00;
+}
+
 @media screen and (max-width: 992px) {
-    .sides{
-        flex: 0 0 10%;
+    header .sides{
+        flex: 0 0 5%;
     }
 
-    .center{
-        flex: 0 0 80%;
+    header .center{
+        flex: 1 1 95%;
     }
+
+    .search_bar{
+        font-size: .8rem !important;
+    }
+}
+
+
+aside{             /*aside*/
+    width: 9rem;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
+    height: calc(100vh);
+    display: flex;
+    z-index: 950;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    padding-top: 5.5rem;
+}  
+
+aside a{
+    color: white;
+}
+
+.padding{
+    margin-left: 0.5rem;
+}
+
+aside .first-container{
+    gap: 1rem;
+}
+
+aside .fa-chart-simple{
+    margin-left: -.5rem;
+}
+
+.margin-right{
+    margin-right: 2rem !important;
+}
+    
+
+@media screen and (max-width: 992px){
+    
+    aside{
+        width: 4rem;
+    }
+    aside .fa-solid{
+        margin-left: 0;
+    }
+}
+                     
+main{                    /*MAIN */
+    margin-top: 4.5rem;
+    margin-left: 9rem;
+}
+
+.bg-blue{
+    background-color: #1B72E8;
+    height: 9rem;
+}
+
+.contents_1{
+    gap: 3rem in !important;
+    
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    
+    main{                 
+        margin-top: 4.5rem;
+        margin-left: 3.9rem;
+    }
+}
+
+
+.full-line{               /*offcanvas*/
+    width: 100%;
+}
+
+.width_85{
+    width: 85% !important;
+}
+
+.offcanvas-body .big-flex{
+    gap: 2rem;
+}
+
+.height_38{
+    height: 38px;
+}
+
+.margin-top-dropdown{
+    margin-top: 2.9rem;
+}
+
+.dai{
+    text-align: start;
+    justify-content: start !important;
+    width: 100%;
+}
+
+.flexy{
+    flex: 0 0 20%;
+}
+
+.big-flex-2{
+    gap: 0.5rem;
 }
