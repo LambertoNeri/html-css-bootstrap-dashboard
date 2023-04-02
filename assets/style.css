@@ -2,6 +2,10 @@ a{
     text-decoration: none;
 }
 
+.a1{
+    text-decoration: underline !important;
+}
+
 header{                          /*header*/
     background-color: #F8F9FA;
     height: 4.5rem;
@@ -137,7 +141,6 @@ main{                    /*MAIN */
 
 .bg-blue{
     background-color: #1B72E8;
-    height: 9rem;
 }
 
 .contents_1{
@@ -187,6 +190,39 @@ main{                    /*MAIN */
     flex: 0 0 20%;
 }
 
-.big-flex-2{
-    gap: 0.5rem;
+.gap05{
+    gap: 0.5rem !important;
+}
+
+.gap1{
+    gap: 1rem !important;
+}
+
+.scura{
+    background-color: #165BBA !important;
+}
+
+.padding-y{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.padding-personal{
+    padding-top: 0.1rem !important;
+    padding-bottom: 0.1rem !important;
+    padding-inline: 0.3rem !important;
+}
+
+
+tr .cerchietto{
+    width: 100px;
+    height: 100px;
+    padding-bottom: 0.3rem;
+    color: white;
+    background-color: #F26551;
+    border-radius: 100%;
+}
+
+tr .btn:active{
+    background-color: gray !important;
 }
